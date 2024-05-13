@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Sazón Tico Route</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazón Tico Route</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        /* Header background color */
+        header {
+            background-color: rgba(0, 128, 128, 0.8); /* Cambiado a color azul verdoso con transparencia */
+        }
+        /* Botón de Iniciar Sesión */
+        .btn-iniciar-sesion {
+            background-color: #FFFFFF; /* Blanco */
+            color: rgba(0, 128, 128, 0.8); /* Cambiado a color azul verdoso con transparencia */
+        }
+        /* Navbar background color */
+        nav {
+            background-color: rgba(0, 122, 122, 0.8); /* Azul verdoso con transparencia */
+        }
+        /* Footer background color */
+        footer {
+            background-color: rgba(0, 128, 128, 0.8); /* Azul verdoso con transparencia */
+        }
+        /* Custom styles */
+    </style>
 </head>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="py-4 px-8 flex items-center justify-between">
+        <div class="flex items-center">
+            <img src="images/Logo.png" alt="Sazón Tico Route" class="h-8 mr-2">
+            <h1 class="text-xl font-bold">Sazón Tico Route</h1>
+        </div>
+        <div>
+            <button class="btn-iniciar-sesion py-2 px-4 rounded-lg">Iniciar sesión</button>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="py-2 px-8 mb-4">
+        <ul class="flex justify-center">
+            <li class="mx-4"><a href="#" class="text-white hover:underline">Inicio</a></li>
+            <li class="mx-4"><a href="#" class="text-white hover:underline">Tours</a></li>
+            <li class="mx-4"><a href="#" class="text-white hover:underline">Restaurantes</a></li>
+            <li class="mx-4"><a href="#" class="text-white hover:underline">Mercados</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section with image and text -->
+    <section class="relative">
+        <img src="images/Banner.jpg" alt="Plato típico costarricense" class="w-full h-auto">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Descubre la esencia de la gastronomía tica</h2>
+            <p class="text-lg text-white">Explora los sabores auténticos de Costa Rica con Sazón Tico Route</p>
+        </div>
+    </section>
+
+    <!-- Section for restaurant selection -->
+    <section class="py-8 px-8">
+        <h2 class="text-2xl font-bold mb-4">Elige tu destino gastronómico</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Ejemplo de tarjeta de restaurante -->
+            <div class="bg-gray-100 rounded-lg p-4">
+                <h3 class="text-lg font-semibold mb-2">Restaurante Tico Tradicional</h3>
+                <p class="text-sm text-gray-600 mb-2">Puntuación: 4.5/5 (Basada en 100 opiniones)</p>
+                <img src="images/Plato1.jpg" alt="Restaurante Tico Tradicional" class="w-full h-40 object-cover mb-2">
+                <p class="text-sm text-gray-700">¡Disfruta de platos típicos costarricenses preparados con amor!</p>
+            </div>
+            <!-- Ejemplo de otra tarjeta de restaurante -->
+            <div class="bg-gray-100 rounded-lg p-4">
+                <h3 class="text-lg font-semibold mb-2">Marisquería Pura Vida</h3>
+                <p class="text-sm text-gray-600 mb-2">Puntuación: 4.8/5 (Basada en 150 opiniones)</p>
+                <img src="images/Plato2.jpg" alt="Marisquería Pura Vida" class="w-full h-40 object-cover mb-2">
+                <p class="text-sm text-gray-700">¡Los mejores mariscos frescos de la costa costarricense!</p>
+            </div>
+            <!-- Agrega más tarjetas de restaurantes según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 px-8 text-center">
+        <ul class="flex justify-center mb-4">
+            <li class="mx-4"><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook"></i></a></li>
+            <li class="mx-4"><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a></li>
+            <li class="mx-4"><a href="#" class="text-white hover:text-gray-300"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p class="text-sm text-white">© 2024 Sazón Tico Route. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
 </html>
